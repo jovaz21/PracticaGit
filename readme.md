@@ -5,13 +5,13 @@
 
 - **¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?**
 
-	> En el paso anterior hemos creado un 'Nodo Inalcanzable' (el que contiene los cambios sobre el archivo GIT-NUESTRO.MD). Lo que vamos a hacer en este paso es utilizar "git merge <ID del Nodo Inalcanzable>" (hay que hacer un "git reflog" para localizar ese ID)
-	> Este comando nos va a permitir reabsorber dentro de la Rama 'styled' los cambios realizados en el 'Nodo Inalcanzable' y se hará un fast-forward... con lo cual con 1 sólo comando nos volveremos a encontrar en la misma situación que antes de ejecutar el "git reset --hard HEAD~1"
+	> En el paso anterior hemos creado un 'Nodo Inalcanzable' (el que contiene los cambios sobre el archivo GIT-NUESTRO.MD). Lo que vamos a hacer en este paso es utilizar "git merge &#60;ID del Nodo Inalcanzable&#62;" (hay que hacer un "git reflog" para localizar ese ID)
+	> Este comando nos va a permitir reabsorber dentro de la Rama 'styled' los cambios realizados en el 'Nodo Inalcanzable' y se hará un fast-forward... con lo cual con 1 sólo comando nos volveremos a encontrar en la misma situación que antes de ejecutar el "git reset --hard HEAD&#126;1"
 
 - **El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?**
 
 	> No causa ningún conflicto, todo lo contrario, tras el "git merge master" (estando posicionados en la Rama 'styled') nos contesta: "Already up to date".
-	> Esto es normal porque el Nodo de la Rama 'master' es padre del Nodo de la Rama 'styled' en el que estamos posicionados. Todos los cambios que intentemos incorporar de esta forma estánya incorporados en la Rama 'styled'.
+	> Esto es normal porque el Nodo de la Rama 'master' es padre del Nodo de la Rama 'styled' en el que estamos posicionados. Todos los cambios que intentemos incorporar de esta forma están ya incorporados en la Rama 'styled'.
 
 - **El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?**
 
@@ -30,11 +30,11 @@
 - **El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?**
 
 	> Si no pusiéramos la directriz '--no-ff' al comando "git merge title", el 'merge' sería de tipo fast forward
-	> Porque el Nodo de la Rama'title' está justo a '1 paso más' del Nodo de la Rama 'master' sobre el que estamos
+	> Porque el Nodo de la Rama 'title' está justo a '1 paso más' del Nodo de la Rama 'master' sobre el que estamos
 
 - **¿Qué comando o comandos utilizaste en el paso 27?**
 
-	> Comando: "git reset HEAD~1"
+	> Comando: "git reset HEAD&#126;1"
 
 - **¿Qué comando o comandos utilizaste en el paso 28?**
 
@@ -52,7 +52,7 @@
 
 	> Comandos:
 		1. "git reflog" para localizar el ID del Nodo inicial
-		2. "git checkout <ID del Nodo Inicial>"
+		2. "git checkout &#60;ID del Nodo Inicial&#62;"
 
 - **¿Qué comando o comandos usaste en el punto 33?**
 
